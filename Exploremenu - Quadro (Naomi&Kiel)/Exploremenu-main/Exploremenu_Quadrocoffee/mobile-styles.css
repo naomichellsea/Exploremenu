@@ -1,19 +1,27 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
 .explore-menu-mobile {
     display: flex;
     flex-direction: column;
     height: auto;
-    align-items: flex-start;
+    align-items: center; /* Center items horizontally */
     position: relative;
+    width: 100%; /* Full width */
+    background-color: #eae9e5;
   }
   
   .explore-menu-mobile .div {
     display: flex;
     flex-direction: column;
-    height: auto;
-    align-items: flex-start;
+    align-items: center; /* Center items horizontally */
     position: relative;
-    align-self: stretch;
-    width: 100%;
+    width: 100%; 
     background-color: #eae9e5;
     border-radius: 10px;
   }
@@ -21,23 +29,25 @@
   .explore-menu-mobile .div-2 {
     position: relative;
     align-self: stretch;
+    align-items: center;
     width: 100%;
     height: 4041px;
     background-color: #eae9e5;
+    margin: 0;
   }
   
   .explore-menu-mobile .overlap {
-    position: absolute;
-    width: 430px;
-    height: 587px;
-    top: -58px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: -80px;
     left: 0;
   }
   
   .explore-menu-mobile .explore-cover {
     position: absolute;
-    width: 430px;
-    height: 466px;
+    width: 100%;
+    height: auto;
     top: 121px;
     left: 0;
   }
@@ -65,27 +75,28 @@
   
   .explore-menu-mobile .text-wrapper {
     position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-text-stroke: 1px #eae9e5;
+    top: 70px;
+    left: 10px;
+    -webkit-text-stroke: 0.5px #eae9e5;
     font-family: "Poppins-Medium", Helvetica;
-    font-weight: 500;
+    font-weight: 1000;
     color: transparent;
     font-size: 50px;
-    letter-spacing: 0;
+    letter-spacing: 2px;
     line-height: normal;
   }
   
   .explore-menu-mobile .popular-coffee {
     position: absolute;
-    top: 26px;
-    left: 77px;
+    top: 90px;
+    left: 90px;
     font-family: "Poppins-Medium", Helvetica;
-    font-weight: 500;
+    font-weight: 400;
     color: #ffffff;
     font-size: 20px;
     letter-spacing: 0;
     line-height: normal;
+    white-space: nowrap;
   }
   
   .explore-menu-mobile .group-2 {
@@ -185,14 +196,15 @@
   
   .explore-menu-mobile .mobile-navigation {
     display: flex;
-    width: 430px;
-    height: 63px;
+    width: 85vw;
+    height: 100%;
+    padding: 5px 30px;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 10px;
     position: absolute;
-    top: 58px;
+    top: 80px;
     left: 0;
+    right: 0;
     background-color: #edece8;
   }
   
@@ -235,7 +247,6 @@
   .explore-menu-mobile .text-wrapper-2 {
     position: relative;
     width: fit-content;
-    margin-top: -1.00px;
     font-family: "Poppins-Medium", Helvetica;
     font-weight: 500;
     color: #3f3f3f;
@@ -245,15 +256,13 @@
   }
   
   .explore-menu-mobile .frame {
-    display: inline-flex;
+    display: flex;
     height: 54px;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 10px;
     position: absolute;
     top: 3272px;
-    left: 59px;
+    left: 110px;
   }
   
   .explore-menu-mobile .text-wrapper-3 {
@@ -273,11 +282,10 @@
   .explore-menu-mobile .frame-2 {
     display: flex;
     flex-direction: column;
-    width: 285px;
+    width: 100%;
     align-items: center;
-    position: absolute;
-    top: 586px;
-    left: 73px;
+    position: relative;
+    top: 120dvw;
   }
   
   .explore-menu-mobile .div-wrapper {
@@ -295,7 +303,7 @@
   .explore-menu-mobile .text-wrapper-4 {
     position: relative;
     width: fit-content;
-    margin-top: -1.00px;
+    margin-top: 40px;
     text-shadow: 0px 4px 4px #00000040;
     font-family: "Poppins-SemiBold", Helvetica;
     font-weight: 600;
@@ -303,6 +311,8 @@
     font-size: 28px;
     letter-spacing: 0;
     line-height: normal;
+    margin-bottom: 20px;
+    white-space: nowrap;
   }
   
   .explore-menu-mobile .frame-3 {
@@ -331,11 +341,10 @@
   .explore-menu-mobile .frame-4 {
     display: flex;
     flex-direction: column;
-    width: 271px;
+    width: 100%;
     align-items: center;
-    position: absolute;
-    top: 1386px;
-    left: 73px;
+    position: relative;
+    top: 250dvw;
   }
   
   .explore-menu-mobile .frame-5 {
@@ -377,11 +386,10 @@
   .explore-menu-mobile .frame-6 {
     display: flex;
     flex-direction: column;
-    width: 275px;
+    width: 100%;
     align-items: center;
-    position: absolute;
-    top: 2456px;
-    left: 80px;
+    position: relative;
+    top: 430dvw;
   }
   
   .explore-menu-mobile .overlap-wrapper {
@@ -395,6 +403,10 @@
   .explore-menu-mobile .overlap-2 {
     position: relative;
     height: 872px;
+    width: 100%;
+    align-items: center;
+    left: 35px;
+    top: 60px;
   }
   
   .explore-menu-mobile .piccolo {
@@ -585,10 +597,10 @@
   
   .explore-menu-mobile .group-5 {
     position: absolute;
-    width: 380px;
+    width: 100%;
     height: 594px;
-    top: 2595px;
-    left: 36px;
+    top: 370dvh;
+    left: 70px;
   }
   
   .explore-menu-mobile .div-4 {
@@ -700,10 +712,10 @@
   
   .explore-menu-mobile .group-7 {
     position: absolute;
-    width: 369px;
+    width: 100%;
     height: 608px;
-    top: 3363px;
-    left: 36px;
+    top: 480dvh;
+    left: 70px;
   }
   
   .explore-menu-mobile .overlap-group-4 {
@@ -820,11 +832,13 @@
   }
   
   .explore-menu-mobile .group-10 {
-    position: absolute;
-    width: 375px;
-    height: 594px;
-    top: 720px;
-    left: 34px;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    top: 50dvh;
+    left: 70px;
+    align-items: center;
   }
   
   .explore-menu-mobile .overlap-group-5 {
@@ -885,7 +899,7 @@
   }
   
   .explore-menu-mobile .overlap-5 {
-    position: absolute;
+    position: relative;
     width: 150px;
     height: 230px;
     top: 0;

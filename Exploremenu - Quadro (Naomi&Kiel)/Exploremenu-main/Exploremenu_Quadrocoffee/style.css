@@ -65,7 +65,7 @@
     font-size: 40px;
     letter-spacing: 0;
     line-height: normal;
-    z-index: 2; /* Optional: ensures Menu is above EXPLORE */
+    z-index: 2; 
 }
   
   .explore-menu .signature-drinks {
@@ -1534,7 +1534,7 @@
   
   .explore-menu .navigation-bar {
     position: fixed;
-    width: 100vw; /* Make it full width */
+    width: 100vw; 
     height: 100px;
     top: 0;
     left: 0;
@@ -1546,15 +1546,15 @@
   .explore-menu .frame-3 {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribute items */
+    justify-content: space-between;
     width: 100%;
-    max-width: 1440px; /* Optional: limit max width */
-    margin: 0 auto;    /* Center the content */
-    padding: 0 40px;   /* Add some horizontal padding */
+    max-width: 1440px; 
+    margin: 0 auto;    
+    padding: 0 40px;   
     position: relative;
     top: 18px;
-    left: 0;           /* Remove left offset */
-    gap: 0;            /* Remove large gap */
+    left: 0;           
+    gap: 0;            
   }
   
   .explore-menu .logo {
