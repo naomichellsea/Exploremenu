@@ -88,8 +88,8 @@ body, html {
   
   .explore-menu-mobile .popular-coffee {
     position: absolute;
-    top: 90px;
-    left: 90px;
+    top: 95px;
+    left: 115px;
     font-family: "Poppins-Medium", Helvetica;
     font-weight: 400;
     color: #ffffff;
@@ -953,6 +953,8 @@ body, html {
     background-color: #3f3f3f;
     border-radius: 0px 0px 20px 20px;
     overflow: hidden;
+    padding: 0;
+    margin: 0;
   }
   
   .explore-menu-mobile .frame-21 {
