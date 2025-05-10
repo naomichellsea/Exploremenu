@@ -10,7 +10,7 @@ body, html {
     display: flex;
     flex-direction: column;
     height: auto;
-    align-items: center; /* Center items horizontally */
+    align-items: center; 
     position: relative;
     width: 100%; /* Full width */
     background-color: #eae9e5;
