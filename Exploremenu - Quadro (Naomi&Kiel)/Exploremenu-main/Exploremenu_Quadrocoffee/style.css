@@ -1,3 +1,17 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
 .explore-menu {
     background-color: #eae9e5;
     display: flex;
@@ -15,7 +29,8 @@
   
   .explore-menu .overlap {
     position: absolute;
-    width: 1440px;
+    width: 100%;
+    max-width: 2560px;
     height: 526px;
     top: 11px;
     left: 0;
@@ -54,7 +69,6 @@
   
   .explore-menu .popular-coffee {
     position: absolute;
-    /* Center horizontally */
     left: 56%;
     top: 50%;
     bottom: 25%;
@@ -1534,7 +1548,7 @@
   
   .explore-menu .navigation-bar {
     position: fixed;
-    width: 100vw; 
+    width: 100%; 
     height: 100px;
     top: 0;
     left: 0;
@@ -1629,7 +1643,7 @@
   .explore-menu .book-a-table-wrapper {
     display: flex;
     flex-direction: column;
-    width: 144px;
+    width: 140px;
     align-items: flex-start;
     gap: 10px;
     padding: 10px;
@@ -1649,3 +1663,280 @@
     border: 1px solid;
     border-color: #3f3f3f;
   }
+
+
+  @media (max-width: 1440px) {
+
+   html{
+    background-color: #eae9e5;
+   } 
+  .explore-menu {
+    background-color: #eae9e5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+    
+  .explore-menu .div {
+    background-color: #eae9e5;
+    width: 100%;
+    height: 5186px;
+    position: absolute;
+  }
+}
+
+@media (min-width: 2560px) {
+    .explore-menu .div {
+    background-color: #eae9e5;
+    width: 100%;
+    max-width: 2560px;
+    height: 5186px;
+    position: absolute;
+  }
+
+
+  /* Navigation Bar */
+
+    .explore-menu .navigation-bar {
+    position: fixed;
+    width: 100%; 
+    height: 200px;
+    top: 0;
+    left: 0;
+    background-color: #edece8;
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+  
+  .explore-menu .frame-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 2560px; 
+    margin: 0 auto;    
+    padding: 0 90px;   
+    position: relative;
+    top: 20px;
+    left: 0;           
+    gap: 0;            
+  }
+  
+  .explore-menu .logo {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 150px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .explore-menu .untitled-design {
+    position: relative;
+    align-self: stretch;
+    width: 350px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .explore-menu .group-20 {
+    position: relative;
+    width: 600px;
+    height: 44px;
+  }
+  
+  .explore-menu .text-wrapper-29 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: #3f3f3f;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .explore-menu .div-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .explore-menu .about {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 170px;
+  }
+  
+  .explore-menu .menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 350px;
+  }
+  
+  .explore-menu .review {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 535px;
+  }
+  
+  .explore-menu .book-a-table-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 40px;
+    position: relative;
+  }
+  
+  .explore-menu .book-a-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    border: 1px solid;
+    border-color: #3f3f3f;
+  }
+ 
+  /* Explore Cover Section */
+
+    .explore-menu .overlap {
+    position: absolute;
+    width: 2560px;
+    height: 950px;
+    top: 11px;
+    left: 0;
+    background-image: url(image/Explore\ Cover.png);
+    background-size: 100% 100%;
+  }
+
+    .explore-menu .overlap-group {
+    position: relative;
+    width: 417px;
+    height: 150px;
+    top: -2px;
+    left: -2px;
+  }
+  
+  .explore-menu .text-wrapper {
+    position: absolute;
+    top: 155%;
+    left: 70%;
+    -webkit-text-stroke: 2px #eae9e580;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 200px;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
+  
+  .explore-menu .popular-coffee {
+    position: absolute;
+    left: 185%;
+    top: 200%;
+    bottom: 25%;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 80px;
+    letter-spacing: 0;
+    line-height: normal;
+    z-index: 2; 
+}
+
+/* Main Content Menu */
+  .explore-menu .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    text-shadow: 0px 4px 4px #00000040;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #282828;
+    font-size: 70px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 40px;
+    white-space: nowrap;
+    top: 380px;
+  }
+
+    .explore-menu .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #3f3f3f;
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+    top: 400px;
+  }
+
+
+    .explore-menu .desktop-strawberry {
+    position: absolute;
+    width: 275px;
+    height: 485px;
+    top: 1300px;
+    left: 300px;
+  }
+
+    
+  .explore-menu .overlap-3 {
+    position: absolute;
+    width: 599px;
+    height: 449px;
+    top: 1335px;
+    left: 870px;
+  }
+
+    .explore-menu .desktop-chocolate {
+    position: absolute;
+    width: 305px;
+    height: 449px;
+    top: 0;
+    left: 700px;
+  }
+
+    .explore-menu .desktop-icedhot {
+    position: absolute;
+    width: 305px;
+    height: 457px;
+    top: 1330px;
+    left: 2057px;
+  }
+
+
+
+}
